@@ -73,7 +73,7 @@ class Producer:
 
     def close(self):
         """Prepares the producer for exit by cleaning up the producer"""
-        self.producer.close()
+        self.producer.flush()
         logger.info(f"producer {self.topic_name} closed")
 
     def time_millis(self):
