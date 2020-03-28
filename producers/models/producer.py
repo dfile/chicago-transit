@@ -57,7 +57,7 @@ class Producer:
         if self.topic_name not in Producer.existing_topics:
             self.create_topic()
             Producer.existing_topics.add(self.topic_name)
-            logger.info("created topic: ")
+            logger.info(f"created topic: {self.topic_name}")
 
 
 
